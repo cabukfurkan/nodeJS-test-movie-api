@@ -43,7 +43,7 @@ export const addMovies = (req, res) => {
     movie.id = uuidv4()
     movies.push(movie);
 
-    res.status(201).json({ masg: `movie with the id: ${movie.id} added to movies` });
+    res.status(201).json({ msg: `movie with the id: ${movie.id} added to movies` });
 }
 
 export const getMovie = (req, res) => {
