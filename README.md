@@ -26,8 +26,6 @@
 
 ---
 
-**endpoints**
-
 > **GET** _/movies_ finds all movies
 
 > **GET** _/movies/:id_ finds a specific movie
