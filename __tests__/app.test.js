@@ -26,7 +26,7 @@ describe("GET /movies", () => {
         })
     })
 
-    describe("when a spesific movie want to be fetched with id", () => {
+    describe("when a specific movie want to be fetched with id", () => {
         it("should return status 404 when movie with id is not found", async () => {
             const response = await request.get(`/movies/:id`)
             const msg = response.body.msg;
@@ -39,7 +39,7 @@ describe("GET /movies", () => {
             const response = await request.get(`/movies/:id`)
             const msg = response.body.msg;
             if (!msg) {
-                expect(response.status).toBe(404)
+                expect(response.status).toBe(200)
             }
         })
     })
